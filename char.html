@@ -1,5 +1,4 @@
 <html>
-<head>
 <style>
 div {
   width: 100px;
@@ -9,7 +8,6 @@ div {
   animation-duration: 4s;
 }
 
-/* Standard syntax */
 @keyframes example {
   0%   {background-color: red;}
   25%  {background-color: yellow;}
@@ -17,10 +15,20 @@ div {
   100% {background-color: green;}
 }
 </style>
-</head>
 <body>
 <font>
-<p> LA CHARACTER.... </p>        
+<p> LA CHARACTER.... </p>
 </font>
+<canvas id="myCanvas" width="200" height="100" style="border:1px solid #EC00FF;">
+</canvas>
+
+<script>
+var c = document.getElementById("myCanvas");
+var ctx = c.getContext("2d");
+ctx.moveTo(0,0);
+ctx.lineTo(200,0);
+ctx.stroke();
+</script>
+
 </body>
 </html>
