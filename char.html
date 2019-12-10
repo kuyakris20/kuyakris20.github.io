@@ -1,6 +1,7 @@
 <html>
 <body>
 <style>
+<style>
 #myAnimation {
   position: fixed;
   top: 100px;
@@ -10,7 +11,7 @@
   background-color: #DADDEE;
   clip-path: polygon(50%, 0%  100%, 100% 100%);
 }
-#circle1 {
+#eye1 {
   position: fixed;
   top: 120px;
   left: 65px;
@@ -21,7 +22,7 @@
   width: 15px;
   margin: 0;
 }
-#circle2 {
+#eye2 {
   position: fixed;
   top: 120px;
   left: 120px;
@@ -32,10 +33,22 @@
   width: 15px;
   margin: 0;
 }
+#mouth {
+  position: fixed;
+  top: 170px;
+  left: 70px;
+  display: block;
+  background: #000000;
+  border-radius: 0%;
+  height: 15px;
+  width: 60px;
+  margin: 0;
+}
 </style>
 <div id ="myAnimation"></div>
-<div id ="circle1"></div>
-<div id ="circle2"></div>
+<div id ="eye1"></div>
+<div id ="eye2"></div>
+<div id ="mouth"></div>
 <canvas id="myCanvas" width="500" height="300" style="border:3px solid #CC111F;">
 </canvas>
 
