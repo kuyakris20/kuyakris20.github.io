@@ -8,7 +8,16 @@
   left: 50px;
   width: 100px;
   height: 100px;
-  background-color: #DADDEE;
+  background-color: #F6E5AC;
+  clip-path: polygon(50%, 0%  100%, 100% 100%);
+}
+#hair {
+  position: fixed;
+  top: 90px;
+  left: 50px;
+  width: 100px;
+  height: 20px;
+  background-color: #610D03;
   clip-path: polygon(50%, 0%  100%, 100% 100%);
 }
 #eye2 {
@@ -65,9 +74,21 @@
   height: 15px;
   width: 15px;
   margin: 0;
+ }
+ #blush1 {
+  position: fixed;
+  top: 150px;
+  left: 120px;
+  display: block;
+  background: #55C9FF;
+  border-radius: 50%;
+  height: 15px;
+  width: 15px;
+  margin: 0;
 </style>
 <canvas id="myCanvas" width="600" height="200"></canvas>
 <div id ="myAnimation"></div>
+<div id ="hair"></div>
 <div id ="mouth"></div>
 <div id ="tear1"></div>
 <div id ="tear2"></div>
@@ -76,7 +97,7 @@
 <script>
 var c = document.getElementById("myCanvas");
 var ctx = c.getContext("2d");
-ctx.fillStyle = "#A11EEE";
+ctx.fillStyle = "#00AEAE";
 ctx.fillRect(0, 0, 190, 200);
 
 function myMove1() {
@@ -98,10 +119,13 @@ function myMove1() {
     }
   }
 }
+function myMove2() {
+  var text = c.getContext("2d");
+  text.font = "35px Lucida Console";
+  text.strokeText("Yay!", 60, 180);
+}
 </script>
-<div>
 <button onclick="myMove1()">Tell him he's ugly.</button> 
-</div>
 <div>
 <button onclick="myMove2()">Tell him you like him too.</button>
 </div>
