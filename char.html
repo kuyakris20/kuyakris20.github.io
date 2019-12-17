@@ -1,24 +1,25 @@
 <html>
 <body>
 <font color=white>
-<p> Andy walks toward you and tells you that he likes you. How do you respond? </p>
-</font>
+<div style=background-color:#00AEAE>
+<p> You walk into school and find a familliar underclassman. You remember that his name is Andy, as you had bumped into him once before and he introduced himself then. Andy walks toward you and, out of the blue, tells you that he likes you. How do you respond? </p>
+</div>
 <style>
 body {
   background-image: url(https://assets-auto.rbl.ms/0e080cf84d414d2b41ea93a1e60fed633d52ff22607ec026a0f2d461550336a7);
 }
 #myAnimation {
   position: fixed;
-  top: 100px;
+  top: 140px;
   left: 50px;
   width: 100px;
   height: 100px;
-  background-color: #F6E5AC;
+  background-color: #F6E5aC;
   clip-path: polygon(50%, 0%  100%, 100% 100%);
 }
 #hair {
   position: fixed;
-  top: 90px;
+  top: 130px;
   left: 50px;
   width: 100px;
   height: 20px;
@@ -27,7 +28,7 @@ body {
 }
 #eye2 {
   position: fixed;
-  top: 120px;
+  top: 160px;
   left: 120px;
   display: block;
   background: #000000;
@@ -38,7 +39,7 @@ body {
 }
 #mouth {
   position: fixed;
-  top: 170px;
+  top: 210px;
   left: 70px;
   display: block;
   background: #000000;
@@ -49,7 +50,7 @@ body {
 }
 #tear1 {
   position: fixed;
-  top: 120px;
+  top: 160px;
   left: 65px;
   display: block;
   background: #55C9FF;
@@ -60,7 +61,7 @@ body {
 }
 #eye1 {
   position: fixed;
-  top: 120px;
+  top: 160px;
   left: 65px;
   display: block;
   background: #000000;
@@ -71,7 +72,7 @@ body {
  }
  #tear2 {
   position: fixed;
-  top: 120px;
+  top: 160px;
   left: 120px;
   display: block;
   background: #55C9FF;
@@ -107,13 +108,13 @@ ctx.fillRect(0, 0, 190, 200);
 
 function myMove1() {
   var tear1= document.getElementById("tear1");   
-  var tear1Move = 120;
+  var tear1Move = 160;
   var tear2An = document.getElementById("tear2");   
-  var tear2Move = 120;
+  var tear2Move = 160;
   
   var id = setInterval(frame, 20);
   function frame() {
-    if (tear1Move == 190) {
+    if (tear1Move == 230) {
       clearInterval(id);
     } 
     else {
@@ -136,5 +137,12 @@ function myMove2() {
 <div>
 <button onclick="myMove2()">Tell him you like him too.</button>
 </div>
+<div style=background-color:#00AEAE>
+<center>
+<h4>Click quit to go back to the homepage. </h4>
+<h3><a href="char.html">QUIT</a></h3>
+</center>
+</div>
+</font>
 </body>
 </html>
